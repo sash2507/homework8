@@ -1,0 +1,114 @@
+		/*Main Header styling*/
+		#header {
+			height: 120px;
+			width: auto;
+			padding: 20px;
+			margin-right: auto;
+			margin-left: auto;
+			margin-top: 0px;
+			background-color: #FF0000;
+			color: white;
+			text-align: center;
+			border: 5px solid #DF0101;
+		}
+		/*Header Logo styling*/
+		#header img {
+			float: left;
+			height: 120px;
+			margin-right: 20px;
+		}
+		/*Nav Bar styling*/
+		nav ul {
+			margin-right: auto;
+			margin-left: auto;
+			margin-bottom: 0px;
+			padding: 10px;
+			background-color: #DF0101;
+		}
+		/*Nav Bar styling*/
+		nav li {
+			display: inline-block;
+			text-decoration: none;
+			padding: 10px;
+			border: 2px solid #DF0101;
+		}
+		/*Nav Bar Link styling*/
+		a {
+			text-decoration: none;
+			color: #424242;
+		}
+		/*Nav Bar Link styling*/
+		a:hover {
+			color: yellow;
+		}
+		body {
+			font-family: "Verdana", sans-serif;
+			background-color: white;
+			color: #585858;
+		}
+		/*Main text styling*/
+		.center {
+			display: block;
+			margin-right: auto;
+			margin-left: auto;
+			padding-right: 30px;
+			padding-left: 30px;
+			text-align: justify;
+		}
+		/*Main image styling*/
+		.mainpic {
+			display: block;
+			margin-top: 10px;
+			margin-left: auto;
+			margin-right: auto;
+			background-size: cover;
+			height: 500px;
+			width: 900px;
+			background-image: url(wonder-woman.jpg);
+		}
+		/*At 900px width...*/
+		/*Background image of div mainpic changes*/
+		@media all and (max-width: 900px){
+		.mainpic{
+			background-image: url(wonder-woman3.jpg);
+			border: 5px dotted red;
+			width: 350px;
+			}
+		}
+		/*Styling and sizing of header and text change*/
+		@media all and (max-width: 900px){
+		#header {
+			height: 120px;
+			width: 600px;
+			padding: 5px;
+			margin: auto;
+			text-align: center;
+			border: 10px solid #C71585;
+			font-size: 15px;
+		}
+	}
+		/*At 600px width...*/
+		/*Styling/sizing of header and text change*/
+		@media all and (max-width: 600px){
+		#header {
+			height: 120px;
+			width: 400px;
+			padding: 5px;
+			margin-right: auto;
+			margin-left: auto;
+			margin-top: 0px;
+			text-align: center;
+			border: 10px solid #66CDAA;
+			font-size: 10px;
+		}
+	}
+		/*Background pic changes*/
+		@media all and (max-width: 600px){
+		.mainpic{
+			background-image: url(wonder-woman4.png);
+			width: 450px;
+		}
+	}
+
+
+	
